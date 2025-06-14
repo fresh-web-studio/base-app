@@ -6,12 +6,10 @@ Thumbs.db
 ehthumbs.db
 Thumbs.db
 Desktop.ini
-Icon?
 *~
 ._*
 
 # Сборочные директории
-/node_modules
 /build
 /dist
 /out
@@ -90,7 +88,6 @@ TAGS
 npm-debug.log
 yarn-error.log
 coverage
-*.map
 test-results
 reports
 tests
@@ -272,7 +269,6 @@ branching-model.md
 release-management.md
 dependency-management.md
 package-manager.md
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
 composer.lock
@@ -280,8 +276,6 @@ requirements.txt
 Gemfile.lock
 Cargo.lock
 mix.lock
-package.json
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
 composer.lock
@@ -290,7 +284,6 @@ Gemfile.lock
 Cargo.lock
 mix.lock
 packages/*
-node_modules
 bower_components
 vendor
 dist
@@ -363,7 +356,6 @@ metro.config.js.yaml
 metro.config.js.yml
 metro.config.js.on
 meteor/
-node_modules/
 coverage/
 
 # iOS Build Artifacts
