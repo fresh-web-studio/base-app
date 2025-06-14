@@ -1,3 +1,14 @@
 @use 'helpers' as *;
 
-:root {}
+:root {
+
+
+    --container-wigth: #{rem(1600)}; //Ширина контейнера
+    --container-pading-x: #{rem(16)}; //Отступ в мобильной версии от краев
+
+    --transition-duration: 0.2s;
+
+    @include Laptop {
+        --container-wigth: #{rem(1280)}; //Ширина контейнера на планшете
+    }
+}
