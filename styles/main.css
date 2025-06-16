@@ -245,6 +245,7 @@ svg * {
   --container-width: 100rem;
   --container-padding-x: 1rem;
   --transition-duration: 0.2s;
+  --100vw: calc(100vw - var(--scrollbar-width));
 }
 @media (width <= 90.06125rem) {
   :root {
@@ -388,6 +389,46 @@ a[class] {
   outline: 0.125rem dashed var(--color-Light);
   outline-offset: 0.25rem;
   transition-duration: 0s !important;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  padding: 1.125rem 1.5rem;
+  font-size: 1.125rem;
+  color: var(--color-grey-60);
+  white-space: nowrap;
+  background-color: var(--color-dark);
+  border: var(--border);
+  border-radius: 0.75rem;
+}
+@media (width <= 90.06125rem) {
+  .button {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+  }
+}
+@media (any-hover: hover) {
+  .button:hover {
+    color: var(--color-accent);
+    background-color: var(--color-dark-10);
+    border-color: var(--color-accent);
+  }
+}
+@media (any-hover: none) {
+  .button:active {
+    color: var(--color-accent);
+    background-color: var(--color-dark-10);
+    border-color: var(--color-accent);
+  }
+}
+.button--accent {
+  font-weight: 500;
+  color: var(--color-dark);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
