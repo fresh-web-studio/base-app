@@ -8,7 +8,7 @@
 
     --transition-duration: 0.2s;
 
-    @include Laptop {
+    @include laptop {
         --container-wigth: #{rem(1280)}; //Ширина контейнера на планшете
     }
 }
